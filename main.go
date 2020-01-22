@@ -59,6 +59,9 @@ func main() {
 	if err != nil {
 		panic(nil)
 	}
+	fmt.Println("--------------------")
+	for i := 0; i < len(vars); i++ {
+		fmt.Println(*vars[i].Description)
+	}
 
-	fmt.Println(*vars[0].Description)
 }
