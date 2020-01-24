@@ -34,7 +34,7 @@ func main() {
 }
 
 func parsehclfile(filename string) {
-	fmt.Println("Processing " + filename + " file")
+	fmt.Println("Processing .." + filename + " file")
 	parser := hclparse.NewParser()
 	f, parseDiags := parser.ParseHCLFile("test.hcl")
 	if parseDiags.HasErrors() {
